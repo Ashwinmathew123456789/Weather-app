@@ -9,7 +9,7 @@ let wind_speed = document.getElementById("wind_speed")
 function cheek() {
   let input = document.getElementById("input").value
 
-  fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input}&APPID=${api_key}&units=metric`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&APPID=${api_key}&units=metric`)
   .then(res => res.json())
   .then(data => {
     console.log(data)
